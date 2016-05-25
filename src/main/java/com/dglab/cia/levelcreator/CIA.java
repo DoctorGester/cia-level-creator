@@ -78,6 +78,8 @@ public class CIA {
         findIntersections();
         findInternalPoints();
         findPolygons();
+
+		new OBJSerializer().save("C:\\Users\\Toaru Shoujo\\Desktop\\m2.obj", polygons);
     }
 
     private void addPoint(Site site, Point2D point) {
