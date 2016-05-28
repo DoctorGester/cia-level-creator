@@ -80,6 +80,7 @@ public class CIA {
         findInternalPoints();
         findPolygons();
 
+        new LuaSerializer().save("C:\\Users\\Toaru Shoujo\\Desktop\\arena_small.lua", polygons.keySet(), clipPoly.getBounds());
         //new OBJSerializer().save("C:\\Users\\Toaru Shoujo\\Desktop\\m2.obj", polygons);
     }
 
